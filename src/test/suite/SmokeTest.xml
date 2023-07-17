@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke Test">
+
+    <!--  -->
+
+    <test name="Customer Registration, Log In and Checkout Test">
+        <classes>
+            <class name="shop.tools.test.smoke_test.RegistrationLogInCheckoutTest"/>
+        </classes>
+    </test>
+
+    <test name="Search And Filter Test">
+        <classes>
+            <class name="shop.tools.test.smoke_test.SearchAndFilterTest"/>
+        </classes>
+    </test>
+
+    <test name="Cart Test">
+        <classes>
+            <class name="shop.tools.test.smoke_test.AddToCartTest"/>
+        </classes>
+    </test>
+
+</suite>
+
+        <!-- mvn test -Dsurefire.suiteXmlFiles=src/test/suite/SmokeTest.xml -->
